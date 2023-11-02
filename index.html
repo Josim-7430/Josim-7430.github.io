@@ -243,5 +243,51 @@
         </div>
     </div>
     </footer>
+
+
+        <script>
+        const quotes = [
+"Your personal data is nobody's business.",
+"Stay curious, stay secure.",
+"In a world of bits and bytes, security is your shield.",
+"Lock your digital doors and windows",
+"Cybersecurity: Safety in bytes",
+"Passwords are the keys to the kingdom",
+"Think before you click",
+"Guard your data like your life",
+"Security is everyone's job",
+"Encrypt to protect",
+"Trust, but verify",
+"Vigilance is your shield",
+"Secure your bits and bytes",
+"Cyber threats never sleep",
+"Patch, protect, and prevail",
+"Privacy is a right, not a privilege",
+"Data breaches are costly",
+"Online, be street-smart",
+"Keep software up to date",
+"A strong password is your armor",
+"Cybersecurity is a team sport",
+"Stay one step ahead of threats",
+"Beware of digital wolves in sheep's clothing"
+
+        ];
+        const quoteElement = document.querySelector('.quote p');
+    
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+    
+        function updateQuote() {
+            quoteElement.textContent = getRandomQuote();
+        }
+    
+        // Update the quote initially and then every 10 seconds
+        updateQuote();
+        setInterval(updateQuote, 3000); // Change the quote every 3 seconds
+    </script>
+
+    
 </body>
 </html>
