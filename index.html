@@ -1,79 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jsm - Cybersecurity Enthusiast</title>
     <link rel="icon" type="image/png" href="Images/jsm-logo2.png">
-
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(Images/b3.jpg); 
+            background-image: url(Images/b3.jpg);
             color: white;
         }
-
         .header-div {
-  
             padding: 25px;
         }
-
         h1 {
             font-size: 36px;
         }
-
         p {
             font-size: 18px;
         }
-
         nav ul {
             list-style: none;
             padding: 0;
             text-align: center;
         }
-
         nav ul li {
             display: inline;
             margin: 0 20px;
         }
-
         nav ul li a:hover {
-    color: #0078d4; 
-}
-
+            color: #0078d4;
+        }
         nav a {
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
         }
-
         section {
             padding: 20px;
         }
-
         h2 {
             font-size: 24px;
         }
-
         ul {
             list-style: disc;
             margin-left: 20px;
         }
-
         footer {
             text-align: center;
             background-color: #333;
             padding: 10px 0;
         }
-
-        footer {
-            background-color: #111;
-            padding: 10px;
-            color: #888;
-        }
-
         .circular-frame {
             width: 150px;
             height: 150px;
@@ -88,24 +70,15 @@
             float: left;
             animation: wave 4s linear infinite;
         }
-
         .circular-image {
             max-width: 80%;
             max-height: 80%;
             border-radius: 50%;
         }
-
-
-
-
-
-
-
         .info {
             float: left;
             padding-left: 30px;
         }
-
         @keyframes wave {
             0% {
                 box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
@@ -120,28 +93,6 @@
                 transform: scale(1);
             }
         }
-
-        @keyframes rotate {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-
-
-        .scanner {
-            width: 100%;
-            height: 100%;
-            border: 10px solid transparent;
-            border-top-color: #05b2c9;
-            border-radius: 50%;
-            position: absolute;
-            animation: rotate 1s linear infinite;
-        }
-
         @keyframes rotate {
             0% {
                 transform: rotate(0deg);
@@ -153,30 +104,31 @@
         .quote {
             font-style: italic;
         }
-
-
+        /* Custom CSS to set image size in the carousel */
+        #carouselExampleCaptions .carousel-item img {
+            height: 600px;
+            object-fit: cover; /* Maintain aspect ratio and cover the container_of_contact */
+        }
     </style>
 </head>
 <body>
     <div class="header-div">
         <header>
             <span class="circular-frame">
-                <div class="scanner"></div> 
                 <img src="Images/Jsm3.jpg" alt="Your Image" class="circular-image">
             </span>
             <span class="info">
                 <h1>Md Zosim Uddin</h1>
-                <p>Cyber security Enthusiast</p>
+                <p>Cybersecurity Enthusiast</p>
             </span>
         </header>
     </div>
-    <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    
+    <br><br><br><br><br><br><br><br><br><br>
     <div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#works">Monuments</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#vision">My Vision</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -184,12 +136,49 @@
             </ul>
         </nav>
     </div>
-
     <section id="about">
         <h2>About Me</h2>
         <p>I am Zosim Uddin, a Computer Science and Engineering (CSE) student with a strong passion for cybersecurity. I believe in the power of technology to make the world a better and safer place for everyone.</p>
     </section>
-    
+    <!-- Here is the bootstrap -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/People living on mars.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Living on Red Planet</h5>
+                    <p>"Exploring the Red Planet, humans carve out a new life on Mars, pioneering a future beyond Earth's bounds."</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/jwst-jupiter-rings.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>James Web Space Telescope</h5>
+                    <p>"JWST's keen eye peers through the cosmic abyss, capturing Jupiter's majestic rings in stunning celestial bliss."</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Shanghai, China.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Digitalization</h5>
+                    <p style="color: rgb(255, 255, 255);">"Digitalization is revolutionizing our world, connecting every corner with information's unfurled."</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" ariahidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
     <section id="interests">
         <h2>Interests</h2>
         <ul>
@@ -205,7 +194,7 @@
         <p>My vision is to contribute to the field of cybersecurity and make the cyber world better and safer for individuals and organizations. I am dedicated to learning and sharing my knowledge to protect against cyber threats and ensure the well-being of humanity in the digital age.</p>
     </section>
     <section id="contact">
-        <div class="container">
+        <div class="container_of_contact">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch with me, feel free to reach out through the following channels:</p>
             <ul>
@@ -215,121 +204,92 @@
             </ul>
         </div>
     </section>
-
-
-
-
     <script>
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href').substring(1); // Remove the "#" character
-            const targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                e.preventDefault();
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href').substring(1); // Remove the "#" character
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-    });
-</script>
-
-
-
-    <script>
-  const infoText = "Cybersecurity Enthusiast"; // Text you want to animate
-  const infoElement = document.querySelector('.info p');
-
-  let index = 0;
-  let isDeleting = false;
-
-  function typeEffect() {
-    const text = infoText.slice(0, index);
-
-    infoElement.textContent = text;
-
-    if (!isDeleting && index < infoText.length) {
-      index++;
-    } else if (isDeleting && index > 0) {
-      index--;
-    }
-
-    if (index === infoText.length) {
-      isDeleting = true;
-    }
-
-    if (index === 0 && isDeleting) {
-      isDeleting = false;
-    }
-
-    const typingSpeed = isDeleting ? 50 : 100; // Adjust typing and deleting speed
-
-    setTimeout(typeEffect, typingSpeed);
-  }
-
-  // Start the typing effect when the page loads
-  typeEffect();
-</script>
-
-
-
-
-
-    
-
-    <footer>
-        <p>&copy; 2023 Md Zosim Uddin</p>
-        <div class="quote">
-            <p>"Your personal data is
-                nobody's business."</p>
-        </div>
-    </div>
-    </footer>
-
-
-        <script>
-        const quotes = [
-"Your personal data is nobody's business.",
-"Stay curious, stay secure.",
-"In a world of bits and bytes, security is your shield.",
-"Lock your digital doors and windows",
-"Cybersecurity: Safety in bytes",
-"Passwords are the keys to the kingdom",
-"Think before you click",
-"Guard your data like your life",
-"Security is everyone's job",
-"Encrypt to protect",
-"Trust, but verify",
-"Vigilance is your shield",
-"Secure your bits and bytes",
-"Cyber threats never sleep",
-"Patch, protect, and prevail",
-"Privacy is a right, not a privilege",
-"Data breaches are costly",
-"Online, be street-smart",
-"Keep software up to date",
-"A strong password is your armor",
-"Cybersecurity is a team sport",
-"Stay one step ahead of threats",
-"Beware of digital wolves in sheep's clothing"
-
-        ];
-        const quoteElement = document.querySelector('.quote p');
-    
-        function getRandomQuote() {
-            const randomIndex = Math.floor(Math.random() * quotes.length);
-            return quotes[randomIndex];
-        }
-    
-        function updateQuote() {
-            quoteElement.textContent = getRandomQuote();
-        }
-    
-        // Update the quote initially and then every 10 seconds
-        updateQuote();
-        setInterval(updateQuote, 3000); // Change the quote every 3 seconds
     </script>
-
-    
+    <script>
+        const infoText = "Cybersecurity Enthusiast"; // Text you want to animate
+        const infoElement = document.querySelector('.info p');
+        let index = 0;
+        let isDeleting = false;
+        function typeEffect() {
+            const text = infoText.slice(0, index);
+            infoElement.textContent = text;
+            if (!isDeleting && index < infoText.length) {
+                index++;
+            } else if (isDeleting && index > 0) {
+                index--;
+            }
+            if (index === infoText.length) {
+                isDeleting = true;
+            }
+            if (index === 0 && isDeleting) {
+                isDeleting = false;
+            }
+            const typingSpeed = isDeleting ? 50 : 100; // Adjust typing and deleting speed
+            setTimeout(typeEffect, typingSpeed);
+        }
+        // Start the typing effect when the page loads
+        typeEffect();
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+<footer>
+    <p>&copy; 2023 Md Zosim Uddin</p>
+    <div class="quote">
+        <p>"Your personal data is nobody's business."</p>
+    </div>
+</footer>
+<script>
+    const quotes = [
+        "Your personal data is nobody's business.",
+        "Stay curious, stay secure.",
+        "In a world of bits and bytes, security is your shield.",
+        "Lock your digital doors and windows",
+        "Cybersecurity: Safety in bytes",
+        "Passwords are the keys to the kingdom",
+        "Think before you click",
+        "Guard your data like your life",
+        "Security is everyone's job",
+        "Encrypt to protect",
+        "Trust, but verify",
+        "Vigilance is your shield",
+        "Secure your bits and bytes",
+        "Cyber threats never sleep",
+        "Patch, protect, and prevail",
+        "Privacy is a right, not a privilege",
+        "Data breaches are costly",
+        "Online, be street-smart",
+        "Keep software up to date",
+        "A strong password is your armor",
+        "Cybersecurity is a team sport",
+        "Stay one step ahead of threats",
+        "Beware of digital wolves in sheep's clothing"
+    ];
+    const quoteElement = document.querySelector('.quote p');
+    function getRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        return quotes[randomIndex];
+    }
+    function updateQuote() {
+        quoteElement.textContent = getRandomQuote();
+    }
+    // Update the quote initially and then every 3 seconds
+    updateQuote();
+    setInterval(updateQuote, 3000); // Change the quote every 3 seconds
+</script>
 </html>
