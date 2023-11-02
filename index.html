@@ -236,6 +236,43 @@
 
 
 
+    <script>
+  const infoText = "Cybersecurity Enthusiast"; // Text you want to animate
+  const infoElement = document.querySelector('.info p');
+
+  let index = 0;
+  let isDeleting = false;
+
+  function typeEffect() {
+    const text = infoText.slice(0, index);
+
+    infoElement.textContent = text;
+
+    if (!isDeleting && index < infoText.length) {
+      index++;
+    } else if (isDeleting && index > 0) {
+      index--;
+    }
+
+    if (index === infoText.length) {
+      isDeleting = true;
+    }
+
+    if (index === 0 && isDeleting) {
+      isDeleting = false;
+    }
+
+    const typingSpeed = isDeleting ? 50 : 100; // Adjust typing and deleting speed
+
+    setTimeout(typeEffect, typingSpeed);
+  }
+
+  // Start the typing effect when the page loads
+  typeEffect();
+</script>
+
+
+
 
 
     
