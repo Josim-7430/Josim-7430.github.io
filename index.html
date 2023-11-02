@@ -1,95 +1,79 @@
-<!-- This is the start of the HTML document -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- This is the head section containing metadata and links to external resources -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jsm - Cybersecurity Enthusiast</title>
     <link rel="icon" type="image/png" href="Images/jsm-logo2.png">
-    
-    <!-- This is the start of the internal CSS style block -->
+
     <style>
-        /* CSS for the body element */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(Images/b3.jpg);
+            background-image: url(Images/b3.jpg); 
             color: white;
         }
-        
-        /* CSS for the header-div */
+
         .header-div {
+  
             padding: 25px;
         }
-        
-        /* CSS for the h1 element */
+
         h1 {
             font-size: 36px;
         }
-        
-        /* CSS for the p element */
+
         p {
             font-size: 18px;
         }
-        
-        /* CSS for the navigation ul element */
+
         nav ul {
             list-style: none;
             padding: 0;
             text-align: center;
         }
-        
-        /* CSS for the navigation ul li element */
+
         nav ul li {
             display: inline;
             margin: 0 20px;
         }
-        
-        /* CSS for the navigation ul li a:hover state */
+
         nav ul li a:hover {
-            color: #0078d4;
-        }
-        
-        /* CSS for the navigation a element */
+    color: #0078d4; 
+}
+
         nav a {
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
         }
-        
-        /* CSS for the section elements */
+
         section {
             padding: 20px;
         }
-        
-        /* CSS for the h2 element */
+
         h2 {
             font-size: 24px;
         }
-        
-        /* CSS for unordered lists */
+
         ul {
             list-style: disc;
             margin-left: 20px;
         }
-        
-        /* CSS for the footer element */
+
         footer {
             text-align: center;
             background-color: #333;
             padding: 10px 0;
         }
-        
-        /* Additional CSS for the footer */
+
         footer {
             background-color: #111;
             padding: 10px;
             color: #888;
         }
-        
-        /* CSS for circular-frame element */
+
         .circular-frame {
             width: 150px;
             height: 150px;
@@ -104,21 +88,24 @@
             float: left;
             animation: wave 4s linear infinite;
         }
-        
-        /* CSS for circular-image element */
+
         .circular-image {
             max-width: 80%;
             max-height: 80%;
             border-radius: 50%;
         }
-        
-        /* CSS for info element */
+
+
+
+
+
+
+
         .info {
             float: left;
             padding-left: 30px;
         }
-        
-        /* CSS for keyframes animation 'wave' */
+
         @keyframes wave {
             0% {
                 box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
@@ -133,8 +120,7 @@
                 transform: scale(1);
             }
         }
-        
-        /* CSS for keyframes animation 'rotate' */
+
         @keyframes rotate {
             0% {
                 transform: rotate(0deg);
@@ -143,8 +129,9 @@
                 transform: rotate(360deg);
             }
         }
-        
-        /* CSS for the scanner element */
+
+
+
         .scanner {
             width: 100%;
             height: 100%;
@@ -154,35 +141,39 @@
             position: absolute;
             animation: rotate 1s linear infinite;
         }
-        
-        /* Additional CSS for the quote element */
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
         .quote {
             font-style: italic;
         }
+
+
     </style>
 </head>
 <body>
-    <!-- This is the body of the HTML document -->
     <div class="header-div">
         <header>
             <span class="circular-frame">
-                <!-- Circular frame for the image with a scanner effect -->
-                <div class="scanner"></div>
+                <div class="scanner"></div> 
                 <img src="Images/Jsm3.jpg" alt="Your Image" class="circular-image">
             </span>
             <span class="info">
-                <!-- Information about the user -->
                 <h1>Md Zosim Uddin</h1>
-                <p>Cybersecurity Enthusiast</p>
+                <p>Cyber security Enthusiast</p>
             </span>
         </header>
     </div>
-    <!-- Additional line breaks for spacing -->
     <br> <br> <br> <br> <br> <br> <br> <br> <br>
-
+    
     <div>
         <nav>
-            <!-- Navigation menu -->
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -195,13 +186,11 @@
     </div>
 
     <section id="about">
-        <!-- Section about the user -->
         <h2>About Me</h2>
         <p>I am Zosim Uddin, a Computer Science and Engineering (CSE) student with a strong passion for cybersecurity. I believe in the power of technology to make the world a better and safer place for everyone.</p>
     </section>
-
+    
     <section id="interests">
-        <!-- Section about user's interests -->
         <h2>Interests</h2>
         <ul>
             <li>Cybersecurity</li>
@@ -212,6 +201,28 @@
     </section>
     <br><br>
     <section id="vision">
-        <!-- Section about user's vision -->
         <h2>My Vision</h2>
-        <p>My vision is to contribute to the field of cybersecurity and make the cyber world better and safer for individuals and organizations. I am dedicated to learning and sharing my knowledge to protect against cyber threats and ensure
+        <p>My vision is to contribute to the field of cybersecurity and make the cyber world better and safer for individuals and organizations. I am dedicated to learning and sharing my knowledge to protect against cyber threats and ensure the well-being of humanity in the digital age.</p>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, feel free to reach out through the following channels:</p>
+            <ul>
+                <li>Email: <a href="mailto:md.zosim@example.com">md.zosim@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/md-zosim-uddin-904692212" target="_blank">Md Zosim Uddin</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/Me4Me1ly" target="_blank">@md_zosim</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Md Zosim Uddin</p>
+        <div class="quote">
+            <p>"Your personal data is
+                nobody's business."</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
